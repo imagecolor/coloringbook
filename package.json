@@ -1,0 +1,42 @@
+{
+  "name": "coloringbook",
+  "version": "0.0.1",
+  "description": "coloring book",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify client/js/app.js -o client/dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imagecolor/coloringbook"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imagecolor/coloringbook/issues"
+  },
+  "homepage": "https://github.com/imagecolor/coloringbook",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cookie-parser": "^1.4.0",
+    "express": "^4.13.3",
+    "jquery": "^2.1.4",
+    "morgan": "^1.6.1",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express-server": "^0.5.1",
+    "grunt-mocha": "^0.4.13",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-nodemon": "^0.4.0"
+  }
+}
