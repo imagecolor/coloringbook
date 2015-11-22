@@ -26,13 +26,27 @@ module.exports = function(grunt) {
     watch: {
       server: {
         files: [ 'client/**/*.js' ],
-        tasks: [ 'build', 'nodemon' ]
+        tasks: [ 'browserify', 'server' ],
+        options: {
+        }
       }
-    }
+    },
+
+    express: {
+      dev: {
+        options: {
+          script: 'index.js'
+        }
+      }
+    },
   });
 
   grunt.registerTask('build', [
     'browserify'
+  ]);
+
+  grunt.registerTask('server', [
+    'express:dev'
   ]);
 
   grunt.registerTask('default', [
