@@ -25,9 +25,10 @@ module.exports = function(grunt) {
 
     watch: {
       server: {
-        files: [ 'client/**/*.js' ],
-        tasks: [ 'browserify', 'server' ],
+        files: [ 'client/js/*.js' ],
+        tasks: [ 'browserify', 'express:dev' ],
         options: {
+          spawn: false
         }
       }
     },
