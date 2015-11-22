@@ -5,6 +5,13 @@ Uses the [Canny edge detector algorithm](https://en.wikipedia.org/wiki/Canny_edg
 ## Table of Contents
 
 1. [Repo Structure](#repo-structure)
+  1. [Server](#server)
+  2. [Client](#client)
+2. [Development](#development)
+  1. [Installing Dependencies](#installing-dependencies)
+  2. [UI Mockup](#ui-mockup)
+  3. [Features](#features)
+  4. [Style Guide](#style-guide)
 
 ## Repo Structure
 
