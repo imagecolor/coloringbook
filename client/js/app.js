@@ -1,15 +1,14 @@
-
 var $ = require('jquery');
+var React = require('react');
+var ReactDOM = require('react-dom');
+var Router = require('react-router').Router;
+var Route = require('react-router').Route;
+var Link = require('react-router').Link;
 var jsfeat = require('./jsfeat');
-$(function() {
-  var canvas = document.getElementById('canvasimage');
-  var ctx = canvas.getContext('2d');
-  var cv = $('#canvasimage');
-  var img = document.getElementById("catimage");
-  var catimg = $('#catimage');
+window.jQuery = require('jquery');
+var MainView = require('./views/mainView.js');
 
-
-  ctx.drawImage(img, 0, 0);
-  var imageData = CannyJS.canny(canvas);
-  imageData.drawOn(canvas);  
-});
+ReactDOM.render(
+  <MainView/>,
+  document.getElementById('coloringApp')
+);
