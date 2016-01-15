@@ -1,11 +1,13 @@
 var React = require('react');
-var PhotoUpload = require('../components/photoUpload');
+var PhotoUpload = require('../components/photoUpload.js');
 
 var MainView = React.createClass({
   render: function() {
     return (
-      <h3>Main View</h3>
-      <PhotoUpload />
+      <div className="root">
+        <h3>Main View</h3>
+        <PhotoUpload />
+      </div>
     );
   }
 });
